@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
 import 'signup.dart';
 
 void main() {
-  runApp(MainApp());
+  runApp(const MainApp());
 }
 
 class MainApp extends StatefulWidget {

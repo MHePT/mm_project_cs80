@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'profile_page.dart';
 import 'home_page.dart';
 import 'videoselector.dart';
 
@@ -9,7 +10,7 @@ class NavigationPage extends StatefulWidget {
   State<NavigationPage> createState() => _NavigationPageState();
 }
 
-List<Widget> buttomPages = [const HomePage(), Video_Page()];
+List<Widget> buttomPages = [const HomePage(), VideoPage(), const ProfilePage()];
 
 class _NavigationPageState extends State<NavigationPage> {
   int _crrPage = 0;
@@ -21,6 +22,8 @@ class _NavigationPageState extends State<NavigationPage> {
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(label: " ", icon: Icon(Icons.home)),
+          BottomNavigationBarItem(
+              label: " ", icon: Icon(Icons.video_camera_back)),
           BottomNavigationBarItem(label: " ", icon: Icon(Icons.person_2)),
         ],
         currentIndex: _crrPage,

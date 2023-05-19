@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'videoshow.dart';
 
-class Video_Page extends StatefulWidget {
-  Video_Page({super.key});
+class VideoPage extends StatefulWidget {
+  VideoPage({super.key});
   @override
-  State<Video_Page> createState() => _Video_PageState();
+  State<VideoPage> createState() => _VideoPageState();
 }
 
-class _Video_PageState extends State<Video_Page> {
+class _VideoPageState extends State<VideoPage> {
   int itemCount = 15;
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class _Video_PageState extends State<Video_Page> {
           leading: const Icon(Icons.ondemand_video),
           onTap: () {
             Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => const Video_Play(),
+              builder: (context) => const VideoPlay(),
             ));
           },
         );
